@@ -1,5 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'simplecov'
+SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
@@ -74,6 +76,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.allow_http_connections_when_no_cassette = true
   config.filter_sensitive_data('<recipes_id>') { ENV['recipes_app_id'] }
   config.filter_sensitive_data('<recipes_key>') { ENV['recipes_app_key'] }
   config.configure_rspec_metadata!
