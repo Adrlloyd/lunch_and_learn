@@ -4,7 +4,7 @@ class Api::V1::RecipesController < ApplicationController
       render json: RecipesSerializer.new(RecipesFacade.countries_recipes(params[:country]))
     elsif 
       country = CountriesFacade.rand_country.sample
-      a = render json: RecipesSerializer.new(RecipesFacade.countries_recipes(country))
+      render json: RecipesSerializer.new(RecipesFacade.countries_recipes(country))
     else
       render json: {"data": []}
     end
