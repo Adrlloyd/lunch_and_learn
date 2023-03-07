@@ -8,7 +8,7 @@ class CountriesService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.country_by_name(name)
+  def self.chosen_country(name)
     response = conn.get("name/#{name}")
     JSON.parse(response.body, symbolize_names: true)
   end
