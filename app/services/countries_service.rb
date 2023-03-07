@@ -7,5 +7,10 @@ class CountriesService
     response = conn.get('all')
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.country_by_name(name)
+    response = conn.get("name/#{name}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
   
