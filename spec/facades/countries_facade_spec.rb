@@ -8,4 +8,12 @@ RSpec.describe CountriesFacade do
       expect(country).to be_an Array
     end
   end
+
+  describe '#chosen_country' do
+    it 'creates a poro from a chosen country' do
+      country = CountriesFacade.chosen_country('france')
+
+      expect(country).to be_an Array
+    end
+  end
 end

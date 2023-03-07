@@ -4,4 +4,11 @@ class CountriesFacade
       country[:name][:common]
     end
   end
+
+  def self.chosen_country(name)
+    country = CountriesService.chosen_country(name)
+    country.map do |data|
+      Country.new(data)
+    end
+  end
 end
