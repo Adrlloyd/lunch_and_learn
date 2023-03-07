@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyDC57yi-FiHfUFXd8QkllLumeyzcdOIK2Y&maxResults=1&part=snippet&q=greece
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 07 Mar 2023 00:41:11 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjc2VhcmNoTGlzdFJlc3BvbnNlIiwKICAiZXRhZyI6ICI3akZ4RW9ybHAzTnBHS2dmTWczRzY5bVBkTlEiLAogICJuZXh0UGFnZVRva2VuIjogIkNBRVFBQSIsCiAgInJlZ2lvbkNvZGUiOiAiVVMiLAogICJwYWdlSW5mbyI6IHsKICAgICJ0b3RhbFJlc3VsdHMiOiA1OCwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNzZWFyY2hSZXN1bHQiLAogICAgICAiZXRhZyI6ICJKNDc3NTBra2x6LWZTY0JUUTRHTWNhY2dDS0kiLAogICAgICAiaWQiOiB7CiAgICAgICAgImtpbmQiOiAieW91dHViZSN2aWRlbyIsCiAgICAgICAgInZpZGVvSWQiOiAiNDU1THFqTC1EaXciCiAgICAgIH0sCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDIwLTA5LTI2VDA4OjQxOjM2WiIsCiAgICAgICAgImNoYW5uZWxJZCI6ICJVQ2x1UTV5SW5iZUFra2VDbmROblVocHciLAogICAgICAgICJ0aXRsZSI6ICJBIFN1cGVyIFF1aWNrIEhpc3Rvcnkgb2YgR3JlZWNlIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiU291cmNlczog4oCcQ3JlYXRvcnMsIENvbnF1ZXJvcnMsIGFuZCBDaXRpemVuczogQSBIaXN0b3J5IG9mIEFuY2llbnQgR3JlZWNl4oCdICgyMDE4KSBieSBSb2JpbiBXYXRlcmZpZWxkLCBPeGZvcmQgVW5pdmVyc2l0eSBQcmVzcywgLi4uIiwKICAgICAgICAidGh1bWJuYWlscyI6IHsKICAgICAgICAgICJkZWZhdWx0IjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvNDU1THFqTC1EaXcvZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiA5MAogICAgICAgICAgfSwKICAgICAgICAgICJtZWRpdW0iOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS80NTVMcWpMLURpdy9tcWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICAgICAiaGVpZ2h0IjogMTgwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS80NTVMcWpMLURpdy9ocWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNDgwLAogICAgICAgICAgICAiaGVpZ2h0IjogMzYwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIk1yIEhpc3RvcnkiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAicHVibGlzaFRpbWUiOiAiMjAyMC0wOS0yNlQwODo0MTozNloiCiAgICAgIH0KICAgIH0KICBdCn0K
+  recorded_at: Tue, 07 Mar 2023 00:41:11 GMT
+recorded_with: VCR 6.1.0
