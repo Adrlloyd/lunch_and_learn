@@ -8,7 +8,7 @@ RSpec.describe Country do
       }
 
       country = Country.new(data)
-
+      binding.pry
       expect(country).to be_instance_of(Country)
       expect(country.name).to eq("Italy")
     end

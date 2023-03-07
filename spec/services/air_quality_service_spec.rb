@@ -1,8 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'air_quality_service' do 
-
-  it '.get_air_quality_info(lat,lon)' do 
+RSpec.describe AirQualityService do 
+  it 'air_quality_info' do 
 
     quality = AirQualityService.air_quality_info(2.0, 46.8)
    
